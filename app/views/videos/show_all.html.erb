@@ -1,5 +1,7 @@
 <ul> All the videos!
   <% @videos.each do |video| %>
     <li><%= link_to video.title, video_path(video.id) %></li>
+      <li><%= video.snippet %></li>
+      <li><%= video.random %></li>
   <% end %>
 </ul>
